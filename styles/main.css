@@ -1,0 +1,101 @@
+:root{
+  --pink: rgb(244, 115, 242);
+  --blue:rgb(15, 0, 251);
+  --green:rgb(186, 255, 67);
+  --card-opacity: .8
+
+}
+
+#wrapper{
+  min-height: 100vh;
+}
+
+main{
+  background: url("../img/background.jpg") no-repeat;
+  background-size: cover;
+}
+
+
+footer{
+  height: 10vh;
+}
+
+#logo{
+  max-height: 7vh;
+}
+
+
+/* Fondo de la card segun la casa del personaje */
+.Gryffindor {
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 196, 0, var(--card-opacity)),
+    rgba(127, 9, 9, var(--card-opacity)),
+    rgba(255, 196, 0, var(--card-opacity)),
+    rgba(127, 9, 9, var(--card-opacity))
+  );
+}
+.Slytherin {
+  background: linear-gradient(
+    -45deg,
+    rgba(13, 98, 23, var(--card-opacity)),
+    rgba(170, 170, 170, var(--card-opacity)),
+    rgba(13, 98, 23, var(--card-opacity)),
+    rgba(170, 170, 170, var(--card-opacity))
+  );
+}
+.Hufflepuff {
+  background: linear-gradient(
+    -45deg,
+    rgba(238, 225, 23, var(--card-opacity)),
+    rgba(0, 0, 0, var(--card-opacity)),
+    rgba(238, 225, 23, var(--card-opacity)),
+    rgba(0, 0, 0, var(--card-opacity))
+  );
+}
+.Ravenclaw {
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 10, 144, var(--card-opacity)),
+    rgba(148, 107, 45, var(--card-opacity)),
+    rgba(0, 10, 144, var(--card-opacity)),
+    rgba(148, 107, 45, var(--card-opacity))
+  );
+}
+.houseless {
+  background-color: #5b76ec99;
+}
+
+/*  Estilos generales de card.
+    Para poder definir el background-size, primero tiene que haber un background definido.
+    Es por eso que primero se definieron los estilos de las Houses */
+    #card-deck .card {
+      border: none;
+      border-radius: 25px;
+      background-size: 400%;
+      transition: box-shadow 0.6s, background 0.8s;
+      cursor: pointer;
+    }
+
+    .card img{
+      max-width: 100%;
+    }
+    
+    #card-deck img{
+      max-height: 175px;
+      object-fit: contain;
+    }
+    
+    #card-deck .card-footer{
+      font-size: x-large;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      width: 100%;
+    }
+
+    #card-deck .card:hover {
+      box-shadow: -1px 3px 20px var(--green);
+      /* box-shadow: -1px 3px 20px rgb(128, 128, 128); */
+      background-position: 100%;
+    }
+    

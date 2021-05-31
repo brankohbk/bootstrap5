@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="356" height="370" viewBox="0 0 356 370">
+  <g id="Componente_1_2" data-name="Componente 1 – 2" transform="translate(10 10)">
+    <g id="Rectángulo_1" data-name="Rectángulo 1" transform="translate(43)" fill="#f0f0f0" stroke="#707070" stroke-linejoin="round" stroke-width="10">
+      <rect width="250" height="350" rx="100" stroke="none"/>
+      <rect x="-5" y="-5" width="260" height="360" rx="105" fill="none"/>
+    </g>
+    <g id="Rectángulo_2" data-name="Rectángulo 2" transform="translate(43)" fill="#f0f0f0" stroke="#707070" stroke-linejoin="round" stroke-width="10">
+      <rect width="250" height="350" rx="100" stroke="none"/>
+      <rect x="-5" y="-5" width="260" height="360" rx="105" fill="none"/>
+    </g>
+    <g id="Rectángulo_3" data-name="Rectángulo 3" transform="translate(303 135)" fill="#f0f0f0" stroke="#707070" stroke-linejoin="round" stroke-width="10">
+      <rect width="33" height="80" rx="16.5" stroke="none"/>
+      <rect x="-5" y="-5" width="43" height="90" rx="21.5" fill="none"/>
+    </g>
+    <g id="Rectángulo_4" data-name="Rectángulo 4" transform="translate(0 135)" fill="#f0f0f0" stroke="#707070" stroke-linejoin="round" stroke-width="10">
+      <rect width="33" height="80" rx="16.5" stroke="none"/>
+      <rect x="-5" y="-5" width="43" height="90" rx="21.5" fill="none"/>
+    </g>
+    <g id="Rectángulo_5" data-name="Rectángulo 5" transform="translate(177 237)" fill="#f0f0f0" stroke="#707070" stroke-linejoin="round" stroke-width="10">
+      <path d="M0,0H40a0,0,0,0,1,0,0V40a0,0,0,0,1,0,0H10A10,10,0,0,1,0,30V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M0-5H40a5,5,0,0,1,5,5V40a5,5,0,0,1-5,5H10A15,15,0,0,1-5,30V0A5,5,0,0,1,0-5Z" fill="none"/>
+    </g>
+    <rect id="Rectángulo_7" data-name="Rectángulo 7" width="37" height="53" transform="translate(216 237)" fill="#f0f0f0"/>
+    <g id="Rectángulo_8" data-name="Rectángulo 8" transform="translate(119 237)" fill="#f0f0f0" stroke="#707070" stroke-linejoin="round" stroke-width="10">
+      <path d="M0,0H40a0,0,0,0,1,0,0V30A10,10,0,0,1,30,40H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M0-5H40a5,5,0,0,1,5,5V30A15,15,0,0,1,30,45H0a5,5,0,0,1-5-5V0A5,5,0,0,1,0-5Z" fill="none"/>
+    </g>
+    <rect id="Rectángulo_9" data-name="Rectángulo 9" width="146" height="53" transform="translate(89 204)" fill="#f0f0f0"/>
+    <rect id="Rectángulo_10" data-name="Rectángulo 10" width="37" height="53" transform="translate(83 237)" fill="#f0f0f0"/>
+    <line id="Línea_1" data-name="Línea 1" y2="30" transform="translate(168.5 294.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="10"/>
+  </g>
+</svg>
