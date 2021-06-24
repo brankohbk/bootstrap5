@@ -13,7 +13,7 @@ function renderCards(array) {
     card.innerHTML=`<img src="./img/empty.svg" class="card-img-top" alt="Empty box" title="Work illustrations by Storyset.com" />
     <div class="card-body">
     <h5 class="card-title">Oops...</h5>
-    <p class="card-text">No hay personajes agregados a favoritos ⭐</p>
+    <p class="card-text">No hay personajes agregados a favoritos</p>
 
   </div>`
     deck.appendChild(card)
