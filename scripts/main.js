@@ -6,10 +6,21 @@ let starred = [];
 function renderCards(array) {
   deck.innerHTML = "";
 
-  array.length < 1
-    ? (deck.innerHTML =
-        "<p>There are no characters that apply for this filters</p>")
-    : array.forEach((character) => {
+  if(array.length < 1){
+    let card = document.createElement("div");
+    card.id="empty"
+    card.classList = `card p-0 pt-2 col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 m-3 `;
+    card.innerHTML=`<img src="./img/empty.svg" class="card-img-top" alt="Empty box" title="Work illustrations by Storyset.com" />
+    <div class="card-body">
+    <h5 class="card-title">Oops...</h5>
+    <p class="card-text">No hay personajes agregados a favoritos ⭐</p>
+
+  </div>`
+    deck.appendChild(card)
+
+  }else{
+
+   array.forEach((character) => {
         let card = document.createElement("div");
         card.classList = `card p-0 pt-2 col-12 col-md-6 col-lg-4 col-xl-3 col-xxl-2 m-3 text-light ${character.house || "houseless"}`;
         card.innerHTML = `            
@@ -29,19 +40,23 @@ function renderCards(array) {
   </ul>
 
   </div>
-  <div class="card-footer text-center bg-dark" >
-  ${
-    starred.includes(character.name)
-      ? `<i class="bi bi-star-fill text-warning size-5" ></i>`
-      : `<i class="bi bi-star text-warning size-5"></i>`
-  }      
-  </div>
+
 `;
-        card.addEventListener("click", () => {
+let cardFooter = document.createElement("div")
+cardFooter.classList="card-footer text-center bg-dark"
+cardFooter.innerHTML=` ${
+  starred.includes(character.name)
+    ? `<i class="bi ⭐ bi-star-fill text-warning size-5" ></i>`
+    : `<i class="bi ⭐ bi-star text-warning size-5"></i>`
+}    `
+        cardFooter.addEventListener("click", () => {
           toggleFav(character.name);
         });
+        card.appendChild(cardFooter)
         deck.appendChild(card);
       });
+  }
+
 }
 
 function obtenerLocalStorage() {

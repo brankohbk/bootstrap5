@@ -74,9 +74,8 @@ footer{
       border-radius: 25px;
       background-size: 400%;
       transition: box-shadow 0.6s, background 0.8s;
-      cursor: pointer;
     }
-
+    
     .card img{
       max-width: 100%;
     }
@@ -87,15 +86,21 @@ footer{
     }
     
     #card-deck .card-footer{
-      font-size: x-large;
+      cursor: pointer;
       border-bottom-left-radius: 25px;
       border-bottom-right-radius: 25px;
       width: 100%;
     }
-
+    .⭐{
+      font-size: x-large;      
+    }
+    
     #card-deck .card:hover {
       box-shadow: -1px 3px 20px var(--green);
       /* box-shadow: -1px 3px 20px rgb(128, 128, 128); */
       background-position: 100%;
     }
-    
+    #card-deck #empty img{
+      max-width: auto;
+      max-height: 500px;
+    }
